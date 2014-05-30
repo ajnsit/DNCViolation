@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Report violation layout for reporting DNC violations on Android.
+ 
+  Copyright (C) 2011, Raj Mathur <raju@kandalaya.org>
+ 
+  This file is part of DNCViolation.
+ 
+  DNCViolation is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  DNCViolation is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with DNCViolation.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<!-- $Id: doit.xml 8 2011-09-18 05:30:54Z raju $ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:id="@+id/doit"
+	android:padding="10dp">
+	<TextView android:layout_height="wrap_content" android:id="@+id/doit_summary"
+		android:text="" android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_gravity="center" android:paddingBottom="8dp"></TextView>
+
+	<CheckBox android:layout_height="wrap_content" android:id="@+id/doit_delete_sms"
+		android:layout_gravity="center" android:layout_width="wrap_content"
+		android:text="@string/doit_delete_sms"></CheckBox>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/doit_buttons"
+		android:orientation="horizontal" android:paddingTop="32dp">
+		<Button android:id="@+id/doit_do_report" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/doit_do_report"></Button>
+		<Button android:id="@+id/doit_cancel" android:layout_height="wrap_content"
+			android:layout_weight="0.1" android:layout_width="wrap_content"
+			android:text="@string/doit_cancel" android:onClick="doitCancelButtonHandler"></Button>
+
+	</LinearLayout>
+</LinearLayout>

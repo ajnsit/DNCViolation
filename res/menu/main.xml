@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Menu for reporting DNC violations on Android.
+ 
+  Copyright (C) 2011, Raj Mathur <raju@kandalaya.org>
+ 
+  This file is part of DNCViolation.
+ 
+  DNCViolation is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  DNCViolation is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with DNCViolation.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<!-- $Id: main.xml 19 2011-09-20 19:59:36Z raju $ -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:menuCategory="container" android:id="@+id/menu_option_settings"
+		android:visible="true" android:enabled="true" android:title="@string/menu_settings_full"
+		android:titleCondensed="@string/menu_settings_condensed" android:icon="@android:drawable/ic_menu_preferences"></item>
+	<item android:menuCategory="container" android:id="@+id/menu_option_about"
+		android:visible="true" android:enabled="true" android:title="menu_about_full"
+		android:titleCondensed="@string/menu_about_condensed" android:icon="@android:drawable/star_big_on"></item>
+</menu>

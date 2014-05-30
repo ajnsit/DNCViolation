@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Single call/SMS log row layout for reporting DNC violations on Android.
+ 
+  Copyright (C) 2011, Raj Mathur <raju@kandalaya.org>
+ 
+  This file is part of DNCViolation.
+ 
+  DNCViolation is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  DNCViolation is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with DNCViolation.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<!--  $Id: row.xml 8 2011-09-18 05:30:54Z raju $ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:id="@+id/ItemLayout">
+
+	<!--
+		Call log item Display: checkbox phone icon number name date
+		<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="match_parent" android:id="@+id/CallItemLayout"
+		android:layout_weight="1"> <CheckBox
+		android:id="@+id/callSelectViolation"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_weight="0"></CheckBox> <ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_weight="0"
+		android:id="@+id/imageView2"
+		android:src="@android:drawable/ic_menu_call"></ImageView>
+		<LinearLayout android:id="@+id/violationDetails"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:paddingLeft="5dp"> <TextView
+		android:id="@+id/CALL_NUMBER_CELL"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="Large" android:layout_width="match_parent"></TextView>
+		<LinearLayout android:id="@+id/subDetals"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"> <TextView
+		android:id="@+id/CALL_NAME_CELL" android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Medium" android:layout_width="80dp"
+		android:layout_weight="1"></TextView> <TextView
+		android:id="@+id/CALL_DATE_CELL" android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Medium" android:layout_width="80dp"
+		android:layout_weight="1"></TextView> </LinearLayout> <ImageView
+		android:id="@+id/imageView1" android:layout_weight="1"
+		android:layout_width="match_parent" android:layout_height="2dp"
+		android:src="@android:drawable/divider_horizontal_bright"></ImageView>
+		</LinearLayout> </LinearLayout>
+	-->
+
+	<!--
+		SMS log item Display: checkbox phone icon number name date view button
+	-->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="match_parent" android:id="@+id/SMSItemLayout"
+		android:layout_weight="1">
+		<TextView android:id="@+id/itemIndex" android:layout_height="wrap_content" android:layout_width="wrap_content" android:visibility="gone"></TextView>
+		<CheckBox android:id="@+id/selectViolation"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_weight="0" android:onClick="selectButtonHandler"></CheckBox>
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="0"
+			android:id="@+id/callIcon" android:src="@android:drawable/ic_menu_call"></ImageView>
+		<Button android:id="@+id/smsViewButton" android:layout_width="wrap_content"
+			android:text="@string/button_view" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content" android:onClick="viewButtonHandler"></Button>
+		<LinearLayout android:id="@+id/numberLayout"
+			android:orientation="horizontal" android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:id="@+id/violationDetails"
+				android:orientation="vertical" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:paddingLeft="5dp">
+				<TextView android:id="@+id/NUMBER_CELL"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Large" android:layout_width="wrap_content"
+					android:layout_weight="1"></TextView>
+				<LinearLayout android:id="@+id/subDetails"
+					android:layout_height="wrap_content" android:layout_width="match_parent">
+					<TextView android:id="@+id/NAME_CELL"
+						android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+						android:text="Medium" android:layout_width="80dp"
+						android:layout_weight="1"></TextView>
+					<TextView android:id="@+id/DATE_CELL"
+						android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+						android:text="Medium" android:layout_width="80dp"
+						android:layout_weight="1"></TextView>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

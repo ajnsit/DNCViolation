@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Strings for reporting DNC violations on Android.
+ 
+  Copyright (C) 2011, Raj Mathur <raju@kandalaya.org>
+ 
+  This file is part of DNCViolation.
+ 
+  DNCViolation is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  DNCViolation is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with DNCViolation.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<!-- $Id: strings.xml 11 2011-09-20 19:41:30Z raju $ -->
+
+<resources>
+    <string name="hello">Hello World, DNCViolationActivity!</string>
+    <string name="app_name">DNCViolation</string>
+    <string name="no_data">No calls/SMSes to display.</string>
+    <string name="button_view">View</string>
+    <string name="sms_view_sender">Sender:</string>
+    <string name="sms_view_date">Date:</string>
+    <string name="sms_view_done">Back to list</string>
+    <string name="about_done">Back</string>
+    <string name="doit_delete_sms">Delete messages after reporting them</string>
+    <string name="doit_do_report">Report Violations</string>
+    <string name="doit_cancel">Cancel</string>
+    <string name="main_report">Report Them!</string>
+    <string name="menu_settings_full">DNCViolation Settings</string>
+    <string name="menu_settings_condensed">Settings</string>
+    <string name="menu_about_full">About DNCViolation</string>
+    <string name="menu_about_condensed">About</string>
+    <string name="app_version">0.3</string>
+    <string name="about_dncviolation">About DNCViolation</string>
+    <string name="preferences_label">DNCViolation Preferences</string>
+    <string name="pref_key_delete_sms_on_report">delete_sms_on_report</string>
+    <string name="pref_string_delete_sms_on_report">Delete SMSes</string>
+    <string name="pref_summary_delete_sms_on_report">Delete messages after reporting them</string>
+    <string name="pref_key_reporting_sms_number">reporting_sms_number</string>
+    <string name="pref_string_reporting_sms_number">Report violations to</string>
+    <string name="pref_summary_reporting_sms_number">SMS violation details to this number</string>
+</resources>

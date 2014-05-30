@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Main screen layout for reporting DNC violations on Android.
+ 
+  Copyright (C) 2011, Raj Mathur <raju@kandalaya.org>
+ 
+  This file is part of DNCViolation.
+ 
+  DNCViolation is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  DNCViolation is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with DNCViolation.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<!-- $Id: main.xml 8 2011-09-18 05:30:54Z raju $ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical">
+
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/listRows"
+		android:orientation="vertical" android:layout_weight="1">
+		<ListView android:id="@android:id/list" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="1">
+		</ListView>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/actionRow"
+		android:orientation="vertical" android:layout_weight="1"
+		android:weightSum="1" android:paddingTop="12dp">
+		<Button android:id="@+id/main_report_button"
+			android:layout_width="160dp" android:layout_gravity="center"
+			android:layout_height="120dp" android:layout_weight="1"
+			android:text="@string/main_report" android:onClick="mainReportButtonHandler">
+		</Button>
+		<TextView android:layout_width="wrap_content" android:id="@+id/selectedCounts"
+			android:text="" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_gravity="center" android:layout_height="wrap_content"
+			android:layout_weight="1">
+		</TextView>
+
+	</LinearLayout>
+
+</LinearLayout>

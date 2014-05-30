@@ -1,0 +1,42 @@
+2011-09-18  raju  <raju@kandalaya.org>
+
+    * @@@ src/kandalaya/dncviolation/DNCViolationActivity
+    
+    * Remove unwanted imports.
+    
+    * Change all logging to debug and set tag to "DNCViolation".
+    
+    * method doitDoReportButtonHandler: fix typo in time formatter.
+    Add functionality for deleting SMS after reporting it. 
+    
+    * method setSelected: Only update counts if state actually changed.
+    
+    * @@@ src/kandalaya/dncviolation/DNCViolationDB
+    
+    * Remove unwanted imports.
+    
+    * Change all logging to debug and set tag to "DNCViolation".
+    
+    * Move URI(s) to static members.
+    
+    * Add methods: deleteSMS(Activity, String) and deleteSMS(Activity, int).
+    
+    * @@@ AndroidManifest.xml
+    
+    * Add permission WRITE_SMS.
+    
+    * Change minSdkVersion (whatever).
+    
+    * @@@ res/layout/doit.xml
+    
+    * Add padding to summary.
+    
+2011-09-20  raju  <raju@kandalaya.org>
+
+    * @@@ src/kandalaya/dncviolation/DNCViolationActivity
+    
+    * method mainReportButtonHandler: Set default state of delete SMS checkbox from preferences.
+    
+    * method doitDoReportButtonHandler: Set default destination from preferences.
+    
+    * Add methods onCreateOptionsMenu, onOptionsItemSelected, showAboutBox.
